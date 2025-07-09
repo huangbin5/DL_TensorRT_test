@@ -4,3 +4,4 @@ cmake-debug
 cmake-export
 
 lib
+HB_test.cpp

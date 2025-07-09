@@ -10,14 +10,14 @@ link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
 # 查找OpenCV库
 if (WIN32)
     # 设置 OpenCV 路径
-    set(OpenCV_DIR "D:/software/opencv/build")
+    set(OpenCV_DIR "D:/Programs/opencv/build")
 endif ()
 find_package(OpenCV REQUIRED)
 
 
 # 需要将所有使用到的 cpp 文件添加进去
 add_executable(deep_learning
-        test/tools.cpp
+        src/tools.cpp
         test/test_main.cpp
         test/test_segment.cpp
 )
